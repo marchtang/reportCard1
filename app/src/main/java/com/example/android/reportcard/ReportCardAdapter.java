@@ -31,7 +31,7 @@ public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
         TextView courseTextView = (TextView) listItemView.findViewById(R.id.coursename);
         courseTextView.setText(currentReportCard.getCourseName());
         TextView scoreTextView = (TextView) listItemView.findViewById(R.id.coursescore);
-        scoreTextView.setText(currentReportCard.getCourseScore());
+        scoreTextView.setText(String.valueOf(currentReportCard.getCourseScore()));
         return listItemView;
     }
 }

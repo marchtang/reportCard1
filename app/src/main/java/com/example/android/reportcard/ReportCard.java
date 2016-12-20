@@ -17,7 +17,31 @@ public class ReportCard {
         courseName=courName;
         courseScore=courScore;
     }
+
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "studentName='" + studentName + '\'' +
+                ", courseName='" + courseName + '\'' +
+                ", courseScore=" + courseScore +
+                '}';
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
     public String getStudentName(){return studentName;}
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
     public String getCourseName(){return courseName;}
+
+    public void setCourseScore(int courseScore) {
+        this.courseScore = courseScore;
+    }
+
     public int getCourseScore(){return courseScore;}
 }
